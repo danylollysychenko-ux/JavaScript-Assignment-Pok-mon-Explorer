@@ -1,0 +1,85 @@
+#characterCards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  text-align: left;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h3 {
+  color: black;
+  display: flex;
+  margin-bottom: auto;
+  justify-content: center;
+}
+
+img {
+  width: 200px;
+  height: 250px;
+  margin: auto;
+  display: block;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  border-radius: 10px;
+  background-color: red;
+  width: 250px;
+  height: 450px;
+}
+
+.progress-bar {
+  width: 130px;
+  height: 16px;
+  background-color: #ddd;
+  border-radius: 10px;
+  display: block;
+  /* margin: 0 auto; */
+}
+
+.progress-fill {
+  width: 0%;
+  height: 100%;
+  background-color: green;
+  border-radius: 10px;
+}
+
+.loader-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#nameOfCharacter,
+#type {
+  margin-top: auto;
+}
+
+.loader-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat-label {
+  margin: 0.5em 0;
+}
+
+.stats {
+  padding: 1em;
+}
+
+.main-footer{
+  display: wrap;
+}
