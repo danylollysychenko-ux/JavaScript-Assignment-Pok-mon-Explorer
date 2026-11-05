@@ -6,10 +6,11 @@
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  margin: 0;
+  min-height: 80vh;
+  display: grid;
+  place-items: center;
+  padding: 40px;
 }
 
 h3 {
@@ -26,11 +27,11 @@ img {
   display: block;
 }
 
-body {
+/* body {
   margin: 0;
   display: flex;
   justify-content: center;
-}
+} */
 
 .card {
   position: relative;
@@ -80,6 +81,9 @@ body {
   padding: 1em;
 }
 
-.main-footer{
-  display: wrap;
+.top-thing {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
 }
