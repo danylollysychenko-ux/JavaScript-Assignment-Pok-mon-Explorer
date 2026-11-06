@@ -47,8 +47,11 @@ function makeStatElem(stat_val, stat_lbl) {
 
 function search() {
   // search function for the search button...
-  characterDiv.innerHTML = "";
   text = textInput.value;
+  characterDiv.innerHTML = "";
+  let div = document.createElement("div");
+  div.id = `Poke-${text}`;
+  characterDiv.append(div);
   fetch(`https://pokeapi.co/api/v2/pokemon/${text}/`)
     .then((response) => response.json())
     .then((data) => {
